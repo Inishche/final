@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    First Question
+{% endblock %}
+
+{% block main %}
+
+
+
+
+        <div class="text">
+            <p id="parag"><b>Так! Це дійсно білочка! Їх тут дуже багато! Наступного разу захопи горішки &#128521
+            </p>
+
+                <center><image width="500" src="{{ url_for('static', filename='ph/sq_2.jpeg')}}"></image></center>
+
+            <p id="parag"><b>Рушай до Київського Дамблдора! <br>
+                І порахуй прямокутники біля нього</b></p>
+            </div>
+            <center>
+                <img width="700" src="{{ url_for('static', filename='ph/map-men.jpg')}}"  id="MyImage" onclick="makeItFullscreen()"/>
+                <p class="cord">Координати: 50.451030, 30.455709</p>
+            </center>
+
+            <form action="/four" method="post">
+                <div class="form">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="dam" name="dam" placeholder="Кількість прямокутників" type="number">
+                </div>
+                <br>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-lg btn-primary" type="submit">Перевіримо?</button>
+                </div>
+            </form>
+       {% endblock %}
+
+
